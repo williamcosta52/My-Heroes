@@ -2,8 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   #root {
-    overflow: hidden;
-    background-color: #d3d3d3;
+    height: 100%;
   }
 `;
 export default GlobalStyle;

@@ -1,13 +1,15 @@
 import { styled } from 'styled-components';
 
 export const SidebarStyle = styled.div`
-  width: 20%;
+  width: 17%;
   height: 100vh;
   @media (max-width: 450px) {
     width: 40%;
   }
   background: linear-gradient(180deg, #be0000 0%, rgba(34, 0, 0, 0.22) 100%);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  left: 0;
   div {
     display: flex;
     flex-direction: column;

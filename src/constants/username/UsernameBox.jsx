@@ -15,7 +15,7 @@ export default function UsernameBox({ setName, setProfileName }) {
     <Container>
       <div>
         <AiOutlineClose
-          style={{ marginLeft: '90%' }}
+          style={{ marginLeft: '90%', cursor: 'pointer' }}
           onClick={() => setName(false)}
         />
         <form onSubmit={changeName}>

@@ -5,6 +5,8 @@ export const Container = styled.div`
   background: #060000;
   display: flex;
   align-items: center;
+  width: 100%;
+  height: 100vh;
   div:nth-child(2) {
     display: flex;
     flex-direction: column;
@@ -55,4 +57,5 @@ export const Container = styled.div`
 export const EditNameIcon = styled(BsPencilSquare)`
   width: 15%;
   height: 100%;
+  cursor: pointer;
 `;
