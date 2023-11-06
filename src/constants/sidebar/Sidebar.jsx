@@ -15,7 +15,7 @@ export default function Sidebar({ profileName, profileImage }) {
     if (localImage) {
       setImage(localImage);
     }
-  }, []);
+  }, [profileImage]);
   return (
     <SidebarStyle>
       <div>

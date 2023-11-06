@@ -40,6 +40,7 @@ export function Home() {
       if (selectedFile.type.startsWith('image/')) {
         const imageUrl = URL.createObjectURL(selectedFile);
         localStorage.setItem('image', imageUrl);
+        setProfileImage(imageUrl);
       } else {
         console.log('O arquivo selecionado não é uma imagem.');
       }

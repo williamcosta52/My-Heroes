@@ -6,7 +6,19 @@ import { useState } from 'react';
 
 function App() {
   const [heroes, setHeroes] = useState([]);
-  const infos = { heroes, setHeroes };
+  const [firstHero, setFirstHero] = useState(null);
+  const [secondHero, setSecondHero] = useState(null);
+  const [openBattle, setOpenBattle] = useState(false);
+  const infos = {
+    heroes,
+    setHeroes,
+    setFirstHero,
+    setSecondHero,
+    firstHero,
+    secondHero,
+    openBattle,
+    setOpenBattle,
+  };
   return (
     <heroesContext.Provider value={infos}>
       <BrowserRouter>

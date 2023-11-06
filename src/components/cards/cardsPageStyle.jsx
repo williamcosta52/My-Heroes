@@ -18,13 +18,16 @@ export const Container = styled.div`
     overflow: hidden;
   }
   div:nth-child(3) {
-    input {
-      border-radius: 5%;
-      border: none;
-      margin-top: 10%;
-      margin-left: 5%;
-      width: 70%;
-      outline: none;
+    label {
+      color: white;
+      input {
+        border-radius: 5%;
+        border: none;
+        margin-top: 10%;
+        margin-left: 5%;
+        width: 70%;
+        outline: none;
+      }
     }
   }
 `;
@@ -39,12 +42,19 @@ export const CardStyle = styled.div`
   align-items: center;
   justify-content: start !important;
   margin-top: 3%;
+  &.selected {
+    border: 2px solid green;
+  }
+  &.unselected {
+    border: none;
+  }
   img {
     width: 187px;
     height: 223px;
     border-radius: 0px 0px 10px 10px;
     border: 1px solid #f33;
     background: #000;
+    cursor: pointer;
   }
   h2 {
     color: #fff;
