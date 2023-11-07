@@ -21,7 +21,7 @@
 ```
 $ npm install
 ```
-### and run de project:
+### and run the project:
 ```
 $ npm run dev
 ```
